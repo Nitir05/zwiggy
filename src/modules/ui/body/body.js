@@ -1,12 +1,11 @@
 import { LightningElement } from "lwc";
 import { getRestaurantData } from "utils/apiCalls";
 
-export default class Body extends LightningElement{
-    static renderMode = 'light';
-    restaurentList = [];
+export default class Body extends LightningElement {
+  static renderMode = "light";
+  restaurantList = [];
 
-    connectedCallback() {
-        this.restaurentList=getRestaurantData();
-        console.log(this.restaurentList);
-    }
+  connectedCallback() {
+    this.restaurantList = getRestaurantData();
+  }
 }

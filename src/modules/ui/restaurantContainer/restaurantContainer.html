@@ -1,0 +1,9 @@
+<template>
+  <div class="restaurant-container">
+    <template if:true={restaurantList} for:each={restaurantList} for:item="res" for:index="index">
+      <div key={res.Id}>
+        <ui-restaurant-card res-data={res}></ui-restaurant-card>
+      </div>
+    </template>
+  </div>
+</template>
