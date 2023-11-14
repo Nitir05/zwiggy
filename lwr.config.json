@@ -1,6 +1,8 @@
 {
     "lwc": { 
-        "modules": [{ "dir": "$rootDir/src/modules" }],
+        "modules": [
+            { "dir": "$rootDir/src/modules" }
+        ],
         "sourceDir": "./src"
     },
     "routes": [
@@ -15,7 +17,7 @@
         {
             "alias": "assetsDir",
             "dir": "$rootDir/src/assets",
-            "urlPath": "/public/assets"
+            "urlPath": "/assets"
         },
         {
             "alias": "favicon",
@@ -23,4 +25,5 @@
             "urlPath": "/favicon.ico"
         }
     ]
+    
 }

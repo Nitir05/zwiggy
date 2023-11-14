@@ -7,6 +7,7 @@
 
 .nav-items {
     display: flex;
+    align-items: center;
 }
 
 .nav-items > li {
@@ -26,4 +27,9 @@
 
 .brand-logo img:hover {
     height: max-content;
+}
+
+.nav-items-container {
+    display: grid;
+    place-items: center;
 }

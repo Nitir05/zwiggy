@@ -1,0 +1,48 @@
+.res-card {
+    width: 250px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.rating-time {
+    display: flex;
+    margin-left: 12px;
+}
+
+.cuisines {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 2px 0 2px 0;
+    font-size: 13px;
+    color: #686b78;
+    margin-left: 12px;
+}
+
+.res-card h2 {
+    margin-left: 12px;
+    font-size: 18px;
+    color: #02060CBF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.area {
+    margin-left: 12px;
+    padding: 2px 0 2px 0;
+    font-size: 13px;
+    color: #686b78;
+}
+
+.res-card img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.rating-time span:nth-child(2) {
+    padding-left: 2px;
+}
+
+.rating-time span:nth-child(3) {
+    padding-left: 2px;
+}

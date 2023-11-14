@@ -1,3 +1,5 @@
 <template lwc:render-mode="light">
-  <ui-restaurant-container restaurant-list={restaurantList}></ui-restaurant-container>
+  <template if:true={restaurantList}>
+    <ui-rescontainer data={restaurantList}></ui-rescontainer>
+  </template>
 </template>
