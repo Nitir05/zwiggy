@@ -1,35 +1,38 @@
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    background-color: #ffff;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffff;
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .nav-items {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-items > li {
-    margin: 10px;
-    list-style: none;
-    cursor: pointer;
+  margin: 10px;
+  list-style: none;
+  cursor: pointer;
+  color: #3d4152;
 }
 
 .brand-logo {
-    margin: 10px;
+  margin: 10px;
 }
 
 .brand-logo img {
-    width: 100px;
-    height: 60px;
+  width: 100px;
+  height: 60px;
 }
 
 .brand-logo img:hover {
-    height: max-content;
+  height: max-content;
 }
 
 .nav-items-container {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 }

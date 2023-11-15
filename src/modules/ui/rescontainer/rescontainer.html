@@ -1,9 +1,12 @@
 <template lwc:render-mode="light">
   <div class="res-container">
-    <template if:true={data} for:each={data} for:item="res" for:index="index">
+    <h2 class="online-food-label">Restaurants with online food delivery near you</h2>
+    <div class="res-cards">
+      <template if:true={data} for:each={data} for:item="res" for:index="index">
         <div key={res.info.id}>
           <ui-rescard res={res.info}></ui-rescard>
         </div>
       </template>
+    </div>
   </div>
 </template>

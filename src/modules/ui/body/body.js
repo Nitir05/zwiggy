@@ -8,7 +8,6 @@ export default class Body extends LightningElement {
     getRestaurantData()
       .then((data) => {
         this.restaurantList = data;
-        console.log(this.restaurantList);
       })
       .catch((error) => {
         console.error("Error fetching restaurant data:", error);
