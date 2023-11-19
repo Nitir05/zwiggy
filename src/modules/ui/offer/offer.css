@@ -1,3 +1,13 @@
-:host {
+.offer-card {
+    margin: 0 8px 0 8px;
+}
 
+.offer-banner {
+    width: 425px;
+    height: 252px;
+}
+
+.offer-banner > img {
+    width: 100%;
+    height: 100%;
 }

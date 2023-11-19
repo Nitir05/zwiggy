@@ -1,0 +1,20 @@
+<template lwc:render-mode="light">
+    <div class="offer-container">
+        <div class="offer-label-button">
+            <div>
+                <h2>Best offers for you</h2>
+            </div>
+            <div>
+                <button class="navigation-back">←</button>
+                <button class="navigation-forward">→</button>
+            </div>
+        </div>
+        <div class="offer-cards">
+            <template if:true={data} for:each={data} for:item="offer">
+               <div key={offer.id}>
+                    <ui-offer offer={offer}></ui-offer>
+               </div>
+            </template> 
+        </div>
+    </div>
+</template>

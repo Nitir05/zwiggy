@@ -1,5 +1,10 @@
 <template lwc:render-mode="light">
-  <template if:true={restaurantList}>
-    <ui-rescontainer data={restaurantList}></ui-rescontainer>
-  </template>
+  <div class="body-container">
+    <template if:true={offerList}>
+      <ui-offercontainer data={offerList}></ui-offercontainer>
+    </template>
+    <template if:true={restaurantList}>
+      <ui-rescontainer data={restaurantList}></ui-rescontainer>
+    </template>
+  </div>
 </template>

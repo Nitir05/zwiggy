@@ -2,6 +2,11 @@
     width: 250px;
     margin: 8px;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.res-card:hover {
+    transform: scale(0.9);
 }
 
 .rating-time {
@@ -17,9 +22,15 @@
     font-size: 13px;
     color: #686b78;
     margin-left: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .res-card h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
     margin-left: 12px;
     font-size: 18px;
     color: #02060CBF;
@@ -31,6 +42,7 @@
     padding: 2px 0 2px 0;
     font-size: 13px;
     color: #686b78;
+    margin-top: 5px;
 }
 
 .res-card img {
