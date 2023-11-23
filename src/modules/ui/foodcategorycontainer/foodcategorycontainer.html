@@ -1,0 +1,20 @@
+<template lwc:render-mode="light">
+    <div class="food-category-container">
+        <div class="food-label-button">
+            <div>
+                <h2>What's on your mind?</h2>
+            </div>
+            <div class="navigation-buttons">
+                <button class="navigation-back">←</button>
+                <button class="navigation-forward">→</button>
+            </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+        </div>
+        <div class="food-category-cards">
+            <template if:true={data} for:each={data} for:item="category">
+               <div key={category.id}>
+                    <ui-offer category={category}></ui-offer>
+               </div>
+            </template> 
+        </div>
+    </div>
+</template>
