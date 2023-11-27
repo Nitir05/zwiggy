@@ -5,16 +5,16 @@
                 <h2>Best offers for you</h2>
             </div>
             <div class="navigation-buttons">
-                <button class="navigation-back">←</button>
-                <button class="navigation-forward">→</button>
+                <button class="navigation-back" onclick={handleNavigateBack}>←</button>
+                <button class="navigation-forward" onclick={handleNavigateForward}>→</button>
             </div>
         </div>
-        <div class="offer-cards">
+        <div class="offer-cards" data-id="offerContainer">
             <template if:true={data} for:each={data} for:item="offer">
-               <div key={offer.id}>
+                <div key={offer.id} data-id="offerCard">
                     <ui-offer offer={offer}></ui-offer>
-               </div>
-            </template> 
+                </div>
+            </template>
         </div>
     </div>
 </template>

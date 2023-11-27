@@ -1,4 +1,4 @@
-import { API_URL } from "utils/constants";
+import { API_URL, MENU_URL } from "utils/constants";
 
 const getRestaurantData = async () => {
   const result = await fetch(API_URL);
@@ -25,4 +25,10 @@ const getRestaurantData = async () => {
   };
 };
 
-export { getRestaurantData };
+const getMenuItems = async (resId) => {
+  const result = await fetch(MENU_URL + resId);
+  const json = await result.json();
+  return json;
+};
+
+export { getRestaurantData, getMenuItems };

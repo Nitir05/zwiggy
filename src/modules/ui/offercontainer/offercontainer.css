@@ -1,39 +1,50 @@
 .offer-label-button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offer-label-button > div:nth-child(1) {
+  flex: 9;
+}
+
+.offer-label-button > div:nth-child(2) {
+  flex: 1;
 }
 
 .offer-cards {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 .offer-cards::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
-  
+
 .offer-cards::-webkit-scrollbar-thumb {
-    background-color: white;
+  background-color: white;
 }
 
 .offer-cards::-webkit-scrollbar-track {
-    background-color: white;
+  background-color: white;
 }
 
-.navigation-forward{
-    cursor: pointer;
-    border-radius: 50%;
-    height: 35px;
-    width: 35px;
-    background-color: transparent;
+.navigation-forward {
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  background-color: rgb(226, 226, 231);
 }
 
 .navigation-back {
-    cursor: pointer;
-    border-radius: 50%;
-    height: 35px;
-    width: 35px;
-    background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  background-color: rgb(226, 226, 231);
 }

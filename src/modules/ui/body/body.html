@@ -1,13 +1,13 @@
 <template lwc:render-mode="light">
   <div class="body-container">
+    <template if:true={whatsOnYourMindList}>
+      <ui-foodcategorycontainer data={whatsOnYourMindList}></ui-foodcategorycontainer>
+    </template>
     <template if:true={offerList}>
       <ui-offercontainer data={offerList}></ui-offercontainer>
     </template>
     <template if:true={restaurantList}>
       <ui-rescontainer data={restaurantList}></ui-rescontainer>
-    </template>
-    <template if:true={whatsOnYourMindList}>
-      
     </template>
   </div>
 </template>

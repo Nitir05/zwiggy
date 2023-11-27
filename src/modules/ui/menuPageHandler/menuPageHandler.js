@@ -1,4 +1,4 @@
-export default class BodyPageHandler {
+export default class MenuPageHandler {
   callback;
 
   constructor(callback) {
@@ -12,7 +12,7 @@ export default class BodyPageHandler {
   update() {
     this.callback({
       viewset: {
-        default: () => import("ui/body"),
+        default: () => import("ui/menucontainer"),
       },
     });
   }

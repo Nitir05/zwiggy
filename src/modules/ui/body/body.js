@@ -12,7 +12,6 @@ export default class Body extends LightningElement {
         this.restaurantList = data.restaurants;
         this.offerList = data.offers;
         this.whatsOnYourMindList = data?.whatsOnYourMind;
-        console.log('OUTPUT : ',this.whatsOnYourMindList);
       })
       .catch((error) => {
         console.error("Error fetching restaurant data:", error);

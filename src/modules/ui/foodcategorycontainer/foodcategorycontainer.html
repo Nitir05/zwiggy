@@ -1,20 +1,20 @@
 <template lwc:render-mode="light">
-    <div class="food-category-container">
-        <div class="food-label-button">
+    <div class="food-container">
+        <div class="food-category-label-button">
             <div>
                 <h2>What's on your mind?</h2>
             </div>
             <div class="navigation-buttons">
-                <button class="navigation-back">←</button>
-                <button class="navigation-forward">→</button>
-            </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                <button class="navigation-back" onclick={handleNavigateBackward}>←</button>
+                <button class="navigation-forward" onclick={handleNavigateForward}>→</button>
+            </div>
         </div>
-        <div class="food-category-cards">
+        <div class="food-category-cards" data-id="foodContainer">
             <template if:true={data} for:each={data} for:item="category">
-               <div key={category.id}>
-                    <ui-offer category={category}></ui-offer>
-               </div>
-            </template> 
+                <div data-id="categoryCard" key={category.id}>
+                    <ui-foodcategory category={category}></ui-foodcategory>
+                </div>
+            </template>
         </div>
     </div>
 </template>
